@@ -1,0 +1,521 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Background-gray, #edeaea);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+}
+
+.container{
+    width: 1290px;
+    margin: 0 auto;
+}
+
+
+
+.category_sale{
+    margin: 30px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.sale{
+    width: 135px;
+    height: 104px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid var(--Line-gray, #F0F0F0);
+    background: var(--White, #FFF);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.sale img{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 0px 4px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.sale h3{
+    color: var(--Black, #191919);
+    text-align: center;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.sale h3:hover{
+    color: var(--Red, #E23535);;
+}
+
+.sale_banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sale_pizza{
+    background-color: var(--Primary, #FF7010);;
+    width: 300px;
+    height: 343px;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
+
+.sale_pizza img{
+    border-radius: 12px;
+}
+
+.sale_pizza h4{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    width: 240px;
+    margin:30px 0px  0px 20px;
+}
+
+.sale_cashback{
+    background-color: var(--Primary, #FF7010);
+    width: 300px;
+    height: 343px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sale_cashback h4{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    width: 240px;
+    margin: 75px 0px 23px 20px;
+}
+
+.search-food{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+    width: 1290px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Line-gray, #F0F0F0);
+    background: var(--White, #FFF);
+}
+
+.search-food h5{
+    color: var(--Black, #191919);
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.search-food .btn{
+    border-radius: 6px;
+    background: var(--Primary, #FF7010);
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 783px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid var(--Line-gray, #F0F0F0);
+    background: #FFF;
+}
+
+.searchInput img{
+    width: 13px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-left: 12px;
+}
+
+.searchInput input{
+    border: none;
+    margin-left: 12px;
+    width: 650px;
+    z-index: 1;
+}
+
+.pizza_menu_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 46px 0px;
+}
+
+.pizza_menu_block h1{
+    color: var(--Black, #191919);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.filter-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--Line-gray, #F0F0F0);
+    background: #FFF;
+}
+
+.filter-block button{
+    background-color: #FFF;
+    border: none;
+    color: var(--Black, #191919);
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 3px 3px1;
+}
+
+.filter-block img{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section renderpizza */
+.pizza-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.list-block{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--Line-gray, #F0F0F0);
+    background: var(--White, #FFF);
+}
+
+.list-block img{
+    width: 100%;
+    height: 300px;
+}
+
+.list-block h3{
+    color: var(--Black, #191919);
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    margin-bottom: 10px;
+}
+
+.list-block p{
+    color: var(--Black, #191919);
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 12px 0;
+}
+
+.foodtext-list{
+    margin:0 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-start;
+}
+
+.price-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    border-radius: 6px;
+    background: var(--Primary, #FF7010);
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.price-block h4{
+    color: var(--Primary, #FF7010);
+    text-align: right;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+}
+/* End */
+
+/* section rendersushi */
+.sushi-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* end */
+
+/* snacks renderlist */
+.snacks-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* end */
+
+/* dessert renderlist */
+.dessert-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* end */
+
+/* drinks render list */
+.drinks-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* end */
+
+/* souse render list */
+.souse-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* end */
+
+/* combo render list */
+.combo-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* end */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*two block*/
+  #modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modal-left {
+    width: 1160px;
+    height: 1020px;
+    background: rgba(25, 25, 25, 0.40);
+    backdrop-filter: blur(16px);
+}
+
+
+
+
+#modal-right {
+    width: 530px;
+    height: 1020px;
+    flex-shrink: 0;
+    background: #FFF;
+}
+
+  /* filter-block */
+.filter-text h1{
+    color: var(--Black, #191919);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; 
+    margin:32px 0px 0px 20px;
+}
+
+  #filter-block{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0px 20px 0px 56px;
+  }
+
+  #modal-right h3{
+    color: var(--Gray-text, #A5A5A5);
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    margin: 20px 0px 20px 20px;
+  }
+
+ #filBtn{
+    padding: 11px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--Line-gray, #F0F0F0);
+    background: var(--White, #FFF);
+    color: var(--Black, #191919);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+ }
+
+
+ .editBtn-block{
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 0;
+ }
+
+ #delBtn{
+    display: flex;
+    width: 230px;
+    padding: 13px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--Primary, #FF7010);
+    color: var(--Primary, #FF7010);
+    text-align: center;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+ }
+
+ #ApplyBtn{
+    color: var(--Primary, #FF7010);
+    text-align: center;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    display: flex;
+    width: 230px;
+    padding: 13px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--Primary, #FF7010);
+ }
+
+ #ApplyBtn:hover{
+    color: var(--White, #FFF);
+    border-radius: 6px;
+    background: var(--Primary, #FF7010);
+ }
+
+ #delBtn:hover{
+    color: var(--White, #FFF);
+    border-radius: 6px;
+    background: var(--Primary, #FF7010);
+ }
+
+ .globalFilter{
+    margin-bottom: 29px;
+ }
